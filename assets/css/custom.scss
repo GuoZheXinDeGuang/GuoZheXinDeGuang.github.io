@@ -4,6 +4,17 @@
 @charset "utf-8";
 
 @media (min-width: 576px) {
+  #navbar {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    display: flex !important;
+    min-height: 57px;
+    padding: 0.5rem 1rem;
+  }
+
   #navbar .container {
     display: flex !important;
     align-items: center;
@@ -19,13 +30,27 @@
   }
 
   #navbar .navbar-collapse-main {
+    display: flex !important;
     flex: 1 1 auto;
     justify-content: flex-end !important;
     text-align: right;
+    visibility: visible !important;
   }
 
   #navbar .navbar-menu-list {
+    display: flex !important;
+    flex-direction: row;
     margin-left: auto !important;
     align-items: center;
+    gap: 0.25rem;
+  }
+
+  #navbar .nav-link {
+    display: block;
+    padding: 0.5rem;
+  }
+
+  #navbar .navbar-toggler-main {
+    display: none;
   }
 }
