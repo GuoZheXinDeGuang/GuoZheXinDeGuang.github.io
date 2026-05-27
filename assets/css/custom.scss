@@ -1,0 +1,25 @@
+---
+---
+
+@charset "utf-8";
+
+@media (min-width: 576px) {
+  #navbar .container {
+    position: relative;
+    justify-content: center;
+  }
+
+  #navbar .navbar-brand.social {
+    position: absolute;
+    left: 15px;
+  }
+
+  #navbar .navbar-collapse-main {
+    flex-grow: 0;
+    justify-content: center;
+  }
+
+  #navbar .navbar-menu-list {
+    margin-left: 0;
+  }
+}
