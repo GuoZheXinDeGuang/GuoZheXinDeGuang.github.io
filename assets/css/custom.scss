@@ -5,21 +5,28 @@
 
 @media (min-width: 576px) {
   #navbar .container {
-    position: relative;
-    justify-content: center;
+    display: grid !important;
+    grid-template-columns: minmax(180px, 1fr) auto minmax(180px, 1fr);
+    align-items: center;
   }
 
   #navbar .navbar-brand.social {
-    position: absolute;
-    left: 15px;
+    grid-column: 1;
+    justify-self: start;
+    margin-right: 0;
   }
 
   #navbar .navbar-collapse-main {
+    grid-column: 2;
+    justify-self: center;
+    width: auto;
+    flex-basis: auto;
     flex-grow: 0;
-    justify-content: center;
+    justify-content: center !important;
   }
 
   #navbar .navbar-menu-list {
-    margin-left: 0;
+    margin-left: 0 !important;
+    justify-content: center;
   }
 }
