@@ -49,7 +49,7 @@ external_services:
 
 al_folio:
   api_version: 1
-  style_engine: bootstrap
+  style_engine: tailwind
   tailwind:
     version: 4.1.18
     preflight: false
