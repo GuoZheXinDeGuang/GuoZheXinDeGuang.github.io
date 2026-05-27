@@ -20,12 +20,12 @@ featured_repos:
     description: Reinforcement learning project for quadrupedal landing control in low-gravity environments.
     tags: [reinforcement learning, quadruped, control]
 
-  - name: Rubik's Cube MCTS Runner
-    repo: GuoZheXinDeGuang/DS-GA3001-Reinforcement-Learning-Rubiks-Cube-Solver
-    url: https://github.com/GuoZheXinDeGuang/DS-GA3001-Reinforcement-Learning-Rubiks-Cube-Solver
+  - name: Physics Representation Learning
+    repo: GuoZheXinDeGuang/Physics-Representation-Learning
+    url: https://github.com/GuoZheXinDeGuang/Physics-Representation-Learning
     language: Python
-    description: Reinforcement learning solver for Rubik's Cube that trains a policy-value network and uses Monte Carlo Tree Search with UCT to search solution moves.
-    tags: [reinforcement learning, MCTS, Rubik's Cube]
+    description: Self-supervised representation learning for spatiotemporal physical systems, comparing JEPA, VideoMAE-style masked autoencoding, and DynaMo on The Well active_matter dataset.
+    tags: [self-supervised learning, physics, representation learning]
 
   - name: Bimaminobolonana
     repo: jaron-cui/bimaminobolonana
