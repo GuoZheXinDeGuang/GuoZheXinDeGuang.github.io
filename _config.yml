@@ -49,26 +49,23 @@ external_services:
 
 al_folio:
   api_version: 1
-  style_engine: tailwind
-  tailwind:
-    version: 4.1.18
-    preflight: false
-    css_entry: assets/tailwind/app.css
+  style_engine: bootstrap
+
+  compat:
+    bootstrap:
+      enabled: true
+
   distill:
     engine: distillpub-template
     source: al-org-dev/distill-template#al-folio
     allow_remote_loader: true
+
   features:
     cv:
       enabled: true
     distill:
       enabled: true
-  compat:
-    bootstrap:
-      enabled: false
-      support_window: v1.0-v1.2
-      deprecates_in: v1.3
-      removed_in: v2.0
+
   upgrade:
     channel: stable
     auto_apply_safe_fixes: false
