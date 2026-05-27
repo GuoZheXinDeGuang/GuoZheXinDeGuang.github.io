@@ -1,14 +1,35 @@
-github_users:
-  - torvalds
-  - alshedivat
+featured_repos:
+  - name: ERC-3 Earth Rover Challenge
+    repo: vivekmattam02/ERC-3-earthrover-challenge
+    url: https://github.com/vivekmattam02/ERC-3-earthrover-challenge
+    language: Python
+    description: Autonomous rover challenge codebase for Earth Rover Challenge 3, centered on robotics system integration and Python-based autonomy workflows.
+    tags: [robotics, rover, autonomy]
 
-repo_description_lines_max: 2
+  - name: SG-Nav
+    repo: GuoZheXinDeGuang/SG-Nav
+    url: https://github.com/GuoZheXinDeGuang/SG-Nav
+    language: Jupyter Notebook / Python
+    description: Scene-graph-based zero-shot object navigation project using VLM reasoning, Habitat simulation, Matterport3D ObjectNav episodes, Grounded SAM, GLIP, and related perception modules.
+    tags: [object navigation, scene graph, VLM, Habitat]
 
-github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - name: SpaceDoggy
+    repo: GuoZheXinDeGuang/SpaceDoggy
+    url: https://github.com/GuoZheXinDeGuang/SpaceDoggy
+    language: Python
+    description: Reinforcement learning project for quadrupedal landing control in low-gravity environments.
+    tags: [reinforcement learning, quadruped, control]
+
+  - name: Rubik's Cube MCTS Runner
+    repo: GuoZheXinDeGuang/DS-GA3001-Reinforcement-Learning-Rubiks-Cube-Solver
+    url: https://github.com/GuoZheXinDeGuang/DS-GA3001-Reinforcement-Learning-Rubiks-Cube-Solver
+    language: Python
+    description: Reinforcement learning solver for Rubik's Cube that trains a policy-value network and uses Monte Carlo Tree Search with UCT to search solution moves.
+    tags: [reinforcement learning, MCTS, Rubik's Cube]
+
+  - name: Bimaminobolonana
+    repo: jaron-cui/bimaminobolonana
+    url: https://github.com/jaron-cui/bimaminobolonana
+    language: Jupyter Notebook / Python
+    description: Bimanual robot manipulation project with visual encoders and an ACT (Action Chunking Transformer) policy, including CLIP/Pri3D-style encoders and training/inference scripts.
+    tags: [robot manipulation, ACT, visual encoders]

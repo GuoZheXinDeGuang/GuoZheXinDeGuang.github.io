@@ -1,47 +1,85 @@
 ---
 layout: page
-permalink: /repositories/
 title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+permalink: /repositories/
+description: representative code repositories.
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 
-{% if site.data.repositories.github_users %}
+<style>
+  .repo-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
 
-## GitHub users
+  .repo-item {
+    border-bottom: 1px solid var(--global-divider-color);
+    padding: 0 0 1rem;
+  }
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
+  .repo-item:last-child {
+    border-bottom: 0;
+  }
+
+  .repo-title {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .repo-title a {
+    color: var(--global-theme-color);
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+
+  .repo-meta {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+  }
+
+  .repo-description {
+    margin: 0.35rem 0 0.45rem;
+  }
+
+  .repo-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .repo-tags li {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.25rem;
+    color: var(--global-text-color-light);
+    display: inline-block;
+    font-size: 0.78rem;
+    list-style: none;
+    padding: 0.1rem 0.45rem;
+  }
+</style>
+
+<div class="repo-list">
+  {% for repo in site.data.repositories.featured_repos %}
+    <article class="repo-item">
+      <div class="repo-title">
+        <a href="{{ repo.url }}" rel="external nofollow noopener" target="_blank">{{ repo.name }}</a>
+        <span class="repo-meta">{{ repo.repo }}{% if repo.language %} · {{ repo.language }}{% endif %}</span>
+      </div>
+      <p class="repo-description">{{ repo.description }}</p>
+      {% if repo.tags %}
+        <ul class="repo-tags" aria-label="{{ repo.name }} tags">
+          {% for tag in repo.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </article>
   {% endfor %}
 </div>
-
----
-
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-{% if site.data.repositories.github_users.size > 1 %}
-
-  <h4>{{ user }}</h4>
-  {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-  </div>
-
----
-
-{% endfor %}
-{% endif %}
-{% endif %}
-
-{% if site.data.repositories.github_repos %}
-
-## GitHub Repositories
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endfor %}
-</div>
-{% endif %}

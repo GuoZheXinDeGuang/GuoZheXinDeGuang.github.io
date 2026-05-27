@@ -1,12 +1,24 @@
 ---
-layout: cv
-permalink: /cv/
+layout: page
 title: CV
+permalink: /cv/
+description: curriculum vitae.
 nav: true
 nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
 ---
+
+<p>
+  <a href="{{ '/assets/pdf/Zihan_Liu_CV.pdf' | relative_url }}" target="_blank" rel="noopener">Download CV</a>
+</p>
+
+<object
+  data="{{ '/assets/pdf/Zihan_Liu_CV.pdf' | relative_url }}"
+  type="application/pdf"
+  width="100%"
+  height="900"
+>
+  <p>
+    Your browser cannot display this PDF inline.
+    <a href="{{ '/assets/pdf/Zihan_Liu_CV.pdf' | relative_url }}" target="_blank" rel="noopener">Open the CV</a>.
+  </p>
+</object>
