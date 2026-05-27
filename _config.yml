@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 # bundle exec jekyll serve running command
-title: Zihan Liu # the website title (if blank, full name will be used instead)
+title: Zihan Liu 刘子涵 # the website title (if blank, full name will be used instead)
 first_name: Zihan
 middle_name:
 last_name: Liu

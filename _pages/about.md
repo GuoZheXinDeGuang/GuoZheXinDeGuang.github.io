@@ -5,7 +5,7 @@ permalink: /
 
 profile:
   align: right
-  image: me.jpg
+  image: me1.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Central Park, New York, 2026</p>
