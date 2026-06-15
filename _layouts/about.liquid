@@ -90,7 +90,7 @@ layout: default
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
-      {% include news.liquid limit=true %}
+      {% include news.liquid limit=page.announcements.limit %}
     {% endif %}
 
     <!-- Latest posts -->
