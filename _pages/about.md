@@ -29,6 +29,4 @@ Previously, I was an undergraduate student at **New York University (NYU)**, adv
 
 In Summer 2025, I was a research intern at the **Robotics Institute, Carnegie Mellon University**, working under the supervision of Dr. [Ji Zhang](https://frc.ri.cmu.edu/~zhangji/). I worked on Object Navigation and Vision-Language Navigation. 
 
-More broadly, I am interested in developing **reliable and generalizable physical AI agents** that can reason about their environment, anticipate the consequences of their actions, and perform long-horizon tasks in complex human environments.
-
 Outside of research, I enjoy playing Rubik's Cube (I can solve a 3*3 cube in 12 seconds) and listening to K-pop music. I am a big fan of [BABYMONSTER](https://www.ygfamily.com/en/artists/babymonster) 😈.
