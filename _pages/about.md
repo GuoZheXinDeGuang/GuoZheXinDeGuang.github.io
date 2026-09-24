@@ -10,7 +10,7 @@ profile:
   more_info: >
     <p>Dumbo Park, New York, 2026</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: true # displays every paper from `_bibliography/papers.bib` on the homepage
 social: true # includes social icons at the bottom of the page
 
 announcements:
